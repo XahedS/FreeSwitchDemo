@@ -19,22 +19,25 @@
         <action function="play-file" data="ivr/ivr-you_may_exit_by_hanging_up.wav"/>
         <!-- note that you can do more than just play files, e.g. have pauses and do TTS -->
 
-        <!-- Menu option 1: Call FreeSWITCH conference-->
-        <action function="play-file" data="ivr/ivr-enter_ext_pound.wav"/>
-        <action function="play-file" data="silence_stream://1500"/>
-        <action function="play-file" data="ivr/ivr-to_call_the_freeswitch_conference.wav"/>
+        <!-- Menu option 1: Call FreeSWITCH Play File-->
+        <!--action function="play-file" data="ivr/ivr-enter_ext_pound.wav"/-->
+        <!--action function="play-file" data="silence_stream://1500"/-->
+        <!--action function="play-file" data="ivr/ivr-to_call_the_freeswitch_conference.wav"/-->
+        <action function="play-file" data="voicemail/vm-listen_saved.wav"/>
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/1.wav"/>
 
-        <!-- Menu option 2: Do FreeSWITCH echo test -->
-        <action function="play-file" data="ivr/ivr-to_do_a_freeswitch_echo_test.wav"/>
+        <!-- Menu option 2: Do FreeSWITCH EMAIL test -->
+        <action function="play-file" data="voicemail/vm-forward_to_email.wav"/>
+        <!--action function="play-file" data="ivr/ivr-to_do_a_freeswitch_echo_test.wav"/-->
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/2.wav"/>
 
-        <!-- Menu option 3: Listen to Music on Hold -->
-        <action function="play-file" data="ivr/ivr-to_listen_to_moh.wav"/>
+        <!-- Menu option 3: Listen to Dial Extension -->
+        <action function="play-file" data="ivr/ivr-call_being_transferred.wav"/>
+        <!--action function="play-file" data="ivr/ivr-to_listen_to_moh.wav"/-->
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/3.wav"/>
@@ -70,36 +73,28 @@
   <macro name="demo_ivr_main_menu_short" pause="100">
     <input pattern="(.*)">
       <match>
-        <!-- Menu option 1: Call FreeSWITCH conference-->
-        <action function="play-file" data="silence_stream://1000"/>
-        <action function="play-file" data="ivr/ivr-to_call_the_freeswitch_conference.wav"/>
+        <!-- Menu option 1: Call FreeSWITCH Play File-->
+        <!--action function="play-file" data="ivr/ivr-enter_ext_pound.wav"/-->
+        <!--action function="play-file" data="silence_stream://1500"/-->
+        <!--action function="play-file" data="ivr/ivr-to_call_the_freeswitch_conference.wav"/-->
+        <action function="play-file" data="voicemail/vm-listen_saved.wav"/>
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/1.wav"/>
 
-        <!-- Menu option 2: Do FreeSWITCH echo test -->
-        <action function="play-file" data="ivr/ivr-to_do_a_freeswitch_echo_test.wav"/>
+        <!-- Menu option 2: Do FreeSWITCH EMAIL test -->
+        <action function="play-file" data="voicemail/vm-forward_to_email.wav"/>
+        <!--action function="play-file" data="ivr/ivr-to_do_a_freeswitch_echo_test.wav"/-->
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/2.wav"/>
 
-        <!-- Menu option 3: Listen to Music on Hold -->
-        <action function="play-file" data="ivr/ivr-to_listen_to_moh.wav"/>
+        <!-- Menu option 3: Listen to Dial Extension -->
+        <action function="play-file" data="ivr/ivr-call_being_transferred.wav"/>
+        <!--action function="play-file" data="ivr/ivr-to_listen_to_moh.wav"/-->
         <action function="play-file" data="ivr/ivr-please.wav"/>
         <action function="play-file" data="voicemail/vm-press.wav"/>
         <action function="play-file" data="digits/3.wav"/>
-
-        <!-- Menu option 4: Hear a sample submenu -->
-        <action function="play-file" data="ivr/ivr-to_hear_sample_submenu.wav"/>
-        <action function="play-file" data="ivr/ivr-please.wav"/>
-        <action function="play-file" data="voicemail/vm-press.wav"/>
-        <action function="play-file" data="digits/4.wav"/>
-
-        <!-- Menu option 5: Listen to screaming monkeys -->
-        <action function="play-file" data="ivr/ivr-to_hear_screaming_monkeys.wav"/>
-        <action function="play-file" data="ivr/ivr-please.wav"/>
-        <action function="play-file" data="voicemail/vm-press.wav"/>
-        <action function="play-file" data="digits/5.wav"/>
 
         <!-- Menu option 9: Repeat these options -->
         <action function="play-file" data="ivr/ivr-to_repeat_these_options.wav"/>
