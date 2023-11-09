@@ -1,0 +1,39 @@
+# Compiled class files
+*.class
+
+# Bytecode and runtime-related files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# IDE files and directories (Eclipse, IntelliJ, NetBeans, etc.)
+.settings/
+.idea/
+.classpath
+.project
+.metadata/
+.gradle/
+bin/
+out/
+target/
+.idea
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven specific files and directories
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle-specific files
+build/
+.gradle/
+!gradle-wrapper.jar
+

@@ -1,0 +1,54 @@
+<include>
+  <context name="assignment">
+
+    <extension name="assignment_extensions">
+      <condition field="destination_number" expression="^(10[01][0-9])$">
+	<action application="ivr" data="demo_ivr"/>
+	<!--action application="playback" data="tone_stream://%(1850,4150,475,425);loops=-1" /-->
+	<!--action application="transfer" data="$1 XML default"/-->
+	<!--action application="playback" data="<sound-file-to-play>[@@<seek-offset>]"/--> 
+	<!--action application="system" data="/usr/share/freeswitch/scripts/myApp.sh"/-->
+	<!--action application="system" data="/tmp/myApp.sh"/-->
+	<!--action application="set" data="OUT=${system(myApp.sh)}"/-->
+	<!--action application="log" data="INFO ${OUT}"/-->
+      </condition>
+    </extension>
+
+
+
+<extension name="mail_the_file">
+    <condition field="destination_number" expression="^mail_this$">
+        <action application="lua" data="mail_call.lua ${rec_file}"/>
+        <action application="hangup" data="NORMAL_CLEARING" />    
+         </condition>
+</extension>
+
+    <extension name="public_conference_extensions">
+      <condition field="destination_number" expression="^(3[5-8][01][0-9])$">
+	<action application="transfer" data="$1 XML default"/>
+      </condition>
+    </extension>
+    
+    <!--
+	You can place files in the public directory to get included.
+    -->
+    <X-PRE-PROCESS cmd="include" data="public/*.xml"/>
+    <!--
+	If you have made it this far lets challenge the caller and if they authenticate
+	lets try what they dialed in the default context. (commented out by default)
+    -->
+    <!--
+    <extension name="check_auth" continue="true">
+      <condition field="${sip_authorized}" expression="^true$" break="never">
+	<anti-action application="respond" data="407"/>
+      </condition>
+    </extension>
+    
+    <extension name="transfer_to_default">
+      <condition>
+	<action application="transfer" data="${destination_number} XML default"/>
+      </condition>
+    </extension>
+    -->
+  </context>
+</include>

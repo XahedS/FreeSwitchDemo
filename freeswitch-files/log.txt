@@ -1,0 +1,271 @@
+.=======================================================.
+|            _____ ____     ____ _     ___              |
+|           |  ___/ ___|   / ___| |   |_ _|             |
+|           | |_  \___ \  | |   | |    | |              |
+|           |  _|  ___) | | |___| |___ | |              |
+|           |_|   |____/   \____|_____|___|             |
+|                                                       |
+.=======================================================.
+| Anthony Minessale II, Ken Rice,                       |
+| Michael Jerris, Travis Cross                          |
+| FreeSWITCH (http://www.freeswitch.org)                |
+| Paypal Donations Appreciated: paypal@freeswitch.org   |
+| Brought to you by ClueCon http://www.cluecon.com/     |
+.=======================================================.
+
+.=======================================================================================================.
+|       _                            _    ____ _             ____                                       |
+|      / \   _ __  _ __  _   _  __ _| |  / ___| |_   _  ___ / ___|___  _ __                             |
+|     / _ \ | '_ \| '_ \| | | |/ _` | | | |   | | | | |/ _ \ |   / _ \| '_ \                            |
+|    / ___ \| | | | | | | |_| | (_| | | | |___| | |_| |  __/ |__| (_) | | | |                           |
+|   /_/   \_\_| |_|_| |_|\__,_|\__,_|_|  \____|_|\__,_|\___|\____\___/|_| |_|                           |
+|                                                                                                       |
+|    ____ _____ ____    ____             __                                                             |
+|   |  _ \_   _/ ___|  / ___|___  _ __  / _| ___ _ __ ___ _ __   ___ ___                                |
+|   | |_) || || |     | |   / _ \| '_ \| |_ / _ \ '__/ _ \ '_ \ / __/ _ \                               |
+|   |  _ < | || |___  | |__| (_) | | | |  _|  __/ | |  __/ | | | (_|  __/                               |
+|   |_| \_\|_| \____|  \____\___/|_| |_|_|  \___|_|  \___|_| |_|\___\___|                               |
+|                                                                                                       |
+|     ____ _             ____                                                                           |
+|    / ___| |_   _  ___ / ___|___  _ __         ___ ___  _ __ ___                                       |
+|   | |   | | | | |/ _ \ |   / _ \| '_ \       / __/ _ \| '_ ` _ \                                      |
+|   | |___| | |_| |  __/ |__| (_) | | | |  _  | (_| (_) | | | | | |                                     |
+|    \____|_|\__,_|\___|\____\___/|_| |_| (_)  \___\___/|_| |_| |_|                                     |
+|                                                                                                       |
+.=======================================================================================================.
+
+Type /help <enter> to see a list of commands
+
+
+
+
+[This app Best viewed at 160x60 or more..]
++OK log level  [7]
+2023-11-05 22:22:56.111751 50.57% [NOTICE] switch_channel.c:1142 New Channel sofia/internal/1000@192.168.18.29 [ebe12d36-70de-4fbf-a45f-a6d27b871d27]
+2023-11-05 22:22:56.111751 50.57% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_NEW (Cur 1 Tot 35)
+2023-11-05 22:22:56.132986 50.57% [INFO] sofia.c:10459 sofia/internal/1000@192.168.18.29 receiving invite from 192.168.18.29:44110 version: 1.10.10 -release.17 64bit call-id: ODMxMDQwZTFmYzdjZGNmZGI3NjE1MDM4MzAxY2RhOTY.
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:10553 verifying acl "domains" for ip/port 192.168.18.29:0.
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:600 (sofia/internal/1000@192.168.18.29) State NEW
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:2419 detaching session ebe12d36-70de-4fbf-a45f-a6d27b871d27
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:2532 Re-attaching to session ebe12d36-70de-4fbf-a45f-a6d27b871d27
+2023-11-05 22:22:56.132986 50.57% [INFO] sofia.c:10459 sofia/internal/1000@192.168.18.29 receiving invite from 192.168.18.29:44110 version: 1.10.10 -release.17 64bit call-id: ODMxMDQwZTFmYzdjZGNmZGI3NjE1MDM4MzAxY2RhOTY.
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:10553 verifying acl "domains" for ip/port 192.168.18.29:0.
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:7493 Channel sofia/internal/1000@192.168.18.29 entering state [received][100]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:7503 Remote SDP:
+v=0
+o=Z 0 0 IN IP4 192.168.18.29
+s=Z
+c=IN IP4 192.168.18.29
+t=0 0
+m=audio 8000 RTP/AVP 3 110 8 0 98 101
+a=rtpmap:110 speex/8000
+a=rtpmap:98 iLBC/8000
+a=fmtp:98 mode=20
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+
+2023-11-05 22:22:56.132986 50.57% [DEBUG] sofia.c:7906 (sofia/internal/1000@192.168.18.29) State Change CS_NEW -> CS_INIT
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_INIT (Cur 1 Tot 35)
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:624 (sofia/internal/1000@192.168.18.29) State INIT
+2023-11-05 22:22:56.132986 50.57% [DEBUG] mod_sofia.c:97 sofia/internal/1000@192.168.18.29 SOFIA INIT
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:40 sofia/internal/1000@192.168.18.29 Standard INIT
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:48 (sofia/internal/1000@192.168.18.29) State Change CS_INIT -> CS_ROUTING
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:624 (sofia/internal/1000@192.168.18.29) State INIT going to sleep
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_ROUTING (Cur 1 Tot 35)
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_channel.c:2399 (sofia/internal/1000@192.168.18.29) Callstate Change DOWN -> RINGING
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:640 (sofia/internal/1000@192.168.18.29) State ROUTING
+2023-11-05 22:22:56.132986 50.57% [DEBUG] mod_sofia.c:158 sofia/internal/1000@192.168.18.29 SOFIA ROUTING
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:230 sofia/internal/1000@192.168.18.29 Standard ROUTING
+2023-11-05 22:22:56.132986 50.57% [INFO] mod_dialplan_xml.c:639 Processing 1000 <1000>->1000 in context assignment
+Dialplan: sofia/internal/1000@192.168.18.29 parsing [assignment->assignment_extensions] continue=false
+Dialplan: sofia/internal/1000@192.168.18.29 Regex (PASS) [assignment_extensions] destination_number(1000) =~ /^(10[01][0-9])$/ break=on-false
+Dialplan: sofia/internal/1000@192.168.18.29 Action ivr(demo_ivr) 
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:281 (sofia/internal/1000@192.168.18.29) State Change CS_ROUTING -> CS_EXECUTE
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:640 (sofia/internal/1000@192.168.18.29) State ROUTING going to sleep
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_EXECUTE (Cur 1 Tot 35)
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:647 (sofia/internal/1000@192.168.18.29) State EXECUTE
+2023-11-05 22:22:56.132986 50.57% [DEBUG] mod_sofia.c:213 sofia/internal/1000@192.168.18.29 SOFIA EXECUTE
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_state_machine.c:323 sofia/internal/1000@192.168.18.29 Standard EXECUTE
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_session.c:2791 Application ivr Requires media! pre_answering channel sofia/internal/1000@192.168.18.29
+2023-11-05 22:22:56.132986 50.57% [INFO] switch_core_session.c:2793 Sending early media
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [GSM:3:8000:20:13200:1]/[G722:9:8000:20:64000:1]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [GSM:3:8000:20:13200:1]/[PCMU:0:8000:20:64000:1]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [GSM:3:8000:20:13200:1]/[PCMA:8:8000:20:64000:1]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [speex:110:8000:20:0:1]/[G722:9:8000:20:64000:1]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [speex:110:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2023-11-05 22:22:56.132986 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [speex:110:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5588 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5588 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [iLBC:98:8000:30:0:1]/[G722:9:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [iLBC:98:8000:30:0:1]/[PCMU:0:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5526 Audio Codec Compare [iLBC:98:8000:30:0:1]/[PCMA:8:8000:20:64000:1]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5438 Set telephone-event payload to 101@8000
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:3734 Set Codec sofia/internal/1000@192.168.18.29 PCMA/8000 20 ms 160 samples 64000 bits 1 channels
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_codec.c:111 sofia/internal/1000@192.168.18.29 Original read codec set to PCMA:8
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5798 Set telephone-event payload to 101@8000
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:5856 sofia/internal/1000@192.168.18.29 Set 2833 dtmf send payload to 101 recv payload to 101
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:8659 AUDIO RTP [sofia/internal/1000@192.168.18.29] 192.168.18.29 port 27752 -> 192.168.18.29 port 8000 codec: 8 ms: 20
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_rtp.c:4373 Starting timer [soft] 160 bytes per 20ms
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:8972 sofia/internal/1000@192.168.18.29 Set 2833 dtmf send payload to 101
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:8979 sofia/internal/1000@192.168.18.29 Set 2833 dtmf receive payload to 101
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:9002 sofia/internal/1000@192.168.18.29 Set rtp dtmf delay to 40
+2023-11-05 22:22:56.171711 50.57% [NOTICE] sofia_media.c:90 Pre-Answer sofia/internal/1000@192.168.18.29!
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_channel.c:3585 (sofia/internal/1000@192.168.18.29) Callstate Change RINGING -> EARLY
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_core_media.c:8641 Audio params are unchanged for sofia/internal/1000@192.168.18.29.
+2023-11-05 22:22:56.171711 50.57% [DEBUG] mod_sofia.c:2607 Ring SDP:
+v=0
+o=FreeSWITCH 1699177224 1699177225 IN IP4 192.168.18.29
+s=FreeSWITCH
+c=IN IP4 192.168.18.29
+t=0 0
+m=audio 27752 RTP/AVP 8 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=ptime:20
+a=sendrecv
+
+EXECUTE [depth=0] sofia/internal/1000@192.168.18.29 ivr(demo_ivr)
+2023-11-05 22:22:56.171711 50.57% [DEBUG] sofia.c:7493 Channel sofia/internal/1000@192.168.18.29 entering state [early][183]
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-exit'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-sub'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-exec-app'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-play-sound'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-back'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:746 switch_ivr_menu_stack_xml_add binding 'menu-top'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:883 building menu 'demo_ivr'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:968 binding menu action 'menu-play-sound' to '1'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:968 binding menu action 'menu-exec-app' to '2'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:968 binding menu action 'menu-exec-app' to '3'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:968 binding menu action 'menu-top' to '9'
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_menu.c:486 Executing IVR menu demo_ivr
+2023-11-05 22:22:56.171711 50.57% [DEBUG] switch_ivr_play_say.c:70 No language specified - Using [en]
+2023-11-05 22:22:56.192173 50.57% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-enter_ext_pound.wav] (en:en)
+2023-11-05 22:22:56.192173 50.57% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:22:56.192173 50.57% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:22:56.231707 50.57% [DEBUG] switch_rtp.c:7503 Correct audio ip/port confirmed.
+2023-11-05 22:22:58.851779 50.07% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-enter_ext_pound.wav
+2023-11-05 22:22:58.971707 50.07% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[silence_stream://1500] (en:en)
+2023-11-05 22:22:58.971707 50.07% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:22:58.971707 50.07% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:00.471765 49.47% [DEBUG] switch_ivr_play_say.c:2010 done playing file silence_stream://1500
+2023-11-05 22:23:00.571793 49.27% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-to_call_the_freeswitch_conference.wav] (en:en)
+2023-11-05 22:23:00.571793 49.27% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:00.571793 49.27% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:02.211706 48.97% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-to_call_the_freeswitch_conference.wav
+2023-11-05 22:23:02.311708 48.97% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-please.wav] (en:en)
+2023-11-05 22:23:02.311708 48.97% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:02.311708 48.97% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:02.731741 48.53% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-please.wav
+2023-11-05 22:23:02.831842 48.53% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[voicemail/vm-press.wav] (en:en)
+2023-11-05 22:23:02.831842 48.53% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:02.831842 48.53% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:03.231809 48.53% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/voicemail/vm-press.wav
+2023-11-05 22:23:03.351708 48.53% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[digits/1.wav] (en:en)
+2023-11-05 22:23:03.351708 48.53% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:03.351708 48.53% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:03.811746 48.23% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/digits/1.wav
+2023-11-05 22:23:03.911755 48.23% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-to_do_a_freeswitch_echo_test.wav] (en:en)
+2023-11-05 22:23:03.911755 48.23% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:03.911755 48.23% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:05.731705 47.10% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-to_do_a_freeswitch_echo_test.wav
+2023-11-05 22:23:05.831726 47.10% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-please.wav] (en:en)
+2023-11-05 22:23:05.831726 47.10% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:05.831726 47.10% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:06.251702 47.10% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-please.wav
+2023-11-05 22:23:06.351703 47.10% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[voicemail/vm-press.wav] (en:en)
+2023-11-05 22:23:06.351703 47.10% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:06.351703 47.10% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:06.751703 46.67% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/voicemail/vm-press.wav
+2023-11-05 22:23:06.851708 46.67% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[digits/2.wav] (en:en)
+2023-11-05 22:23:06.851708 46.67% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:06.851708 46.67% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:07.251742 46.67% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/digits/2.wav
+2023-11-05 22:23:07.351771 46.67% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-to_listen_to_moh.wav] (en:en)
+2023-11-05 22:23:07.351771 46.67% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:07.351771 46.67% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:08.931710 46.03% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-to_listen_to_moh.wav
+2023-11-05 22:23:09.051731 46.03% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-please.wav] (en:en)
+2023-11-05 22:23:09.051731 46.03% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:09.051731 46.03% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:09.471703 46.03% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-please.wav
+2023-11-05 22:23:09.571704 45.63% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[voicemail/vm-press.wav] (en:en)
+2023-11-05 22:23:09.571704 45.63% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:09.571704 45.63% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:09.971705 45.63% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/voicemail/vm-press.wav
+2023-11-05 22:23:10.071707 45.63% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[digits/3.wav] (en:en)
+2023-11-05 22:23:10.071707 45.63% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:10.071707 45.63% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:10.471738 45.63% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/digits/3.wav
+2023-11-05 22:23:10.591722 45.63% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-to_repeat_these_options.wav] (en:en)
+2023-11-05 22:23:10.591722 45.63% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:10.591722 45.63% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:11.811716 45.60% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-to_repeat_these_options.wav
+2023-11-05 22:23:11.931706 45.60% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-please.wav] (en:en)
+2023-11-05 22:23:11.931706 45.60% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:11.931706 45.60% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:12.351708 45.60% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-please.wav
+2023-11-05 22:23:12.471705 45.60% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[voicemail/vm-press.wav] (en:en)
+2023-11-05 22:23:12.471705 45.60% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:12.471705 45.60% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:12.871705 45.70% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/voicemail/vm-press.wav
+2023-11-05 22:23:12.991731 45.70% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[digits/9.wav] (en:en)
+2023-11-05 22:23:12.991731 45.70% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:12.991731 45.70% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:13.431736 45.70% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/digits/9.wav
+2023-11-05 22:23:13.551733 45.97% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[silence_stream://2000] (en:en)
+2023-11-05 22:23:13.551733 45.97% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:13.551733 45.97% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:13.711707 45.97% [DEBUG] switch_rtp.c:7748 RTP RECV DTMF 2:960
+2023-11-05 22:23:13.711707 45.97% [INFO] switch_channel.c:528 RECV DTMF 2:960
+2023-11-05 22:23:13.711707 45.97% [DEBUG] switch_ivr_play_say.c:2010 done playing file silence_stream://2000
+2023-11-05 22:23:13.811711 45.97% [DEBUG] switch_ivr_menu.c:378 waiting for 3/4 digits t/o 2000
+2023-11-05 22:23:15.831712 46.20% [DEBUG] switch_ivr_menu.c:425 digits '2'
+2023-11-05 22:23:15.831712 46.20% [DEBUG] switch_ivr_menu.c:580 IVR action on menu 'demo_ivr' matched '2' param 'system /tmp/myApp.sh'
+2023-11-05 22:23:15.831712 46.20% [DEBUG] switch_ivr_menu.c:584 switch_ivr_menu_execute todo=[2]
+EXECUTE [depth=0] sofia/internal/1000@192.168.18.29 system(/tmp/myApp.sh)
+2023-11-05 22:23:15.831712 46.20% [NOTICE] mod_dptools.c:2241 Executing command: /tmp/myApp.sh
+2023-11-05 22:23:17.071720 46.10% [DEBUG] switch_ivr_play_say.c:70 No language specified - Using [en]
+2023-11-05 22:23:17.091710 46.10% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[silence_stream://1000] (en:en)
+2023-11-05 22:23:17.091710 46.10% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:17.091710 46.10% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:18.071705 46.00% [DEBUG] switch_ivr_play_say.c:2010 done playing file silence_stream://1000
+2023-11-05 22:23:18.171740 46.00% [DEBUG] switch_ivr_play_say.c:250 Handle play-file:[ivr/ivr-to_call_the_freeswitch_conference.wav] (en:en)
+2023-11-05 22:23:18.171740 46.00% [DEBUG] switch_ivr_play_say.c:262 Setting playback volume to 0
+2023-11-05 22:23:18.171740 46.00% [DEBUG] switch_ivr_play_say.c:1561 Codec Activated L16@8000hz 1 channels 20ms
+2023-11-05 22:23:19.331712 45.83% [DEBUG] sofia.c:7493 Channel sofia/internal/1000@192.168.18.29 entering state [terminated][487]
+2023-11-05 22:23:19.331712 45.83% [NOTICE] sofia.c:8735 Hangup sofia/internal/1000@192.168.18.29 [CS_EXECUTE] [ORIGINATOR_CANCEL]
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_ivr_play_say.c:2010 done playing file /usr/share/freeswitch/sounds/en/us/callie/ivr/ivr-to_call_the_freeswitch_conference.wav
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_ivr_menu.c:378 waiting for 4/4 digits t/o 2000
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_ivr_menu.c:425 digits ''
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_ivr_menu.c:664 IVR menu 'demo_ivr' no input detected
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_ivr_menu.c:676 exit-sound 'voicemail/vm-goodbye.wav'
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_session.c:2979 sofia/internal/1000@192.168.18.29 skip receive message [APPLICATION_EXEC_COMPLETE] (channel is hungup already)
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:647 (sofia/internal/1000@192.168.18.29) State EXECUTE going to sleep
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_HANGUP (Cur 1 Tot 35)
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:844 (sofia/internal/1000@192.168.18.29) Callstate Change EARLY -> HANGUP
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:846 (sofia/internal/1000@192.168.18.29) State HANGUP
+2023-11-05 22:23:19.331712 45.83% [DEBUG] mod_sofia.c:469 Channel sofia/internal/1000@192.168.18.29 hanging up, cause: ORIGINATOR_CANCEL
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:59 sofia/internal/1000@192.168.18.29 Standard HANGUP, cause: ORIGINATOR_CANCEL
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:846 (sofia/internal/1000@192.168.18.29) State HANGUP going to sleep
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:616 (sofia/internal/1000@192.168.18.29) State Change CS_HANGUP -> CS_REPORTING
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:581 (sofia/internal/1000@192.168.18.29) Running State Change CS_REPORTING (Cur 1 Tot 35)
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:932 (sofia/internal/1000@192.168.18.29) State REPORTING
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:168 sofia/internal/1000@192.168.18.29 Standard REPORTING, cause: ORIGINATOR_CANCEL
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:932 (sofia/internal/1000@192.168.18.29) State REPORTING going to sleep
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:607 (sofia/internal/1000@192.168.18.29) State Change CS_REPORTING -> CS_DESTROY
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_session.c:1744 Session 35 (sofia/internal/1000@192.168.18.29) Locked, Waiting on external entities
+2023-11-05 22:23:19.331712 45.83% [NOTICE] switch_core_session.c:1762 Session 35 (sofia/internal/1000@192.168.18.29) Ended
+2023-11-05 22:23:19.331712 45.83% [NOTICE] switch_core_session.c:1766 Close Channel sofia/internal/1000@192.168.18.29 [CS_DESTROY]
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:735 (sofia/internal/1000@192.168.18.29) Running State Change CS_DESTROY (Cur 0 Tot 35)
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:745 (sofia/internal/1000@192.168.18.29) State DESTROY
+2023-11-05 22:23:19.331712 45.83% [DEBUG] mod_sofia.c:380 sofia/internal/1000@192.168.18.29 SOFIA DESTROY
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:175 sofia/internal/1000@192.168.18.29 Standard DESTROY
+2023-11-05 22:23:19.331712 45.83% [DEBUG] switch_core_state_machine.c:745 (sofia/internal/1000@192.168.18.29) State DESTROY going to sleep
+
